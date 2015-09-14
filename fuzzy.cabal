@@ -20,8 +20,9 @@ executable fuzzy
   main-is:             Main.hs
   ghc-options:         -Wall
   default-extensions:  GeneralizedNewtypeDeriving,
-                       TypeSynonymInstances
-                       FlexibleInstances
+                       TypeSynonymInstances,
+                       FlexibleInstances,
+                       FlexibleContexts
   -- other-extensions:    
   -- other-modules:       
   build-depends:       base >=4.8 && <4.9,
