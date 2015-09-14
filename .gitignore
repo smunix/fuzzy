@@ -4,15 +4,26 @@ cabal-dev
 *.hi
 *.chi
 *.chs.h
+<<<<<<< HEAD
 *~
 *#*
 *_flymake.hs
+=======
+*.dyn_o
+*.dyn_hi
+>>>>>>> 6ecd5e6f69c0e53e14a1f322813c46b3ff013734
 .virtualenv
 .hpc
 .hsenv
 .cabal-sandbox/
 cabal.sandbox.config
+<<<<<<< HEAD
 cabal.config
 *.prof
 *.hp
 *.aux
+=======
+*.prof
+*.aux
+*.hp
+>>>>>>> 6ecd5e6f69c0e53e14a1f322813c46b3ff013734
