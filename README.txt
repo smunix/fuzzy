@@ -66,7 +66,23 @@ alertCentroid = Centroid { domainMin = Var 0,
                            resolution = Var 0.5
                          }
 
-But several functions can be used to define linguistic variables in the domain space:
+Here is how I have defined the domain space:
+alert_high, alert_medium, alert_low :: Set Alert Dom
+alert_high = sigmoid (Var 75) (Var 100)
+alert_medium = gauss (Var 50) (Var 50)
+alert_low = negation alert_high
+
+ms_nv_high, ms_nv_medium, ms_nv_low :: Set MS_Notional Dom
+ms_nv_high = sigmoid (Var 0) (Var 1000)
+ms_nv_medium = gauss (Var 500) (Var 100)
+ms_nv_low = negation ms_nv_high
+
+mkt_nv_high, mkt_nv_medium, mkt_nv_low :: Set MKT_Notional Dom
+mkt_nv_high = sigmoid (Var 0) (Var 1000)
+mkt_nv_medium = gauss (Var 500) (Var 100)
+mkt_nv_low = negation mkt_nv_high
+
+Several functions are readily available for you to define linguistic variables in the domain space:
 - up : left shoulder function
 - down : right shoulder function
 - sigmoid
