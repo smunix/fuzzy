@@ -4,6 +4,9 @@ cabal-dev
 *.hi
 *.chi
 *.chs.h
+*~
+*#*
+*_flymake.hs
 .virtualenv
 .hpc
 .hsenv
